@@ -1,0 +1,235 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #240b0b;
+  padding: 1rem;
+  color: #fff;
+  animation: fadeIn 2s;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6347;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+  animation: fadeInUp 1s;
+}
+
+#home {
+  background: url(https://inspirationseek.com/wp-content/uploads/2014/10/Exotic-Living-Room-Floral-Wallpaper.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 10rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+
+/* Services Section */
+.services {
+  padding: 5rem 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.services h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services .service-cards{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /* flex-wrap: wrap; */
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .card  img {
+  /* flex: 1 1 calc(33.333% - 1rem);
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; */
+  width: 100%;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services .card img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.services .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.services .card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 5rem 1rem;
+  background-color: #eee6c8;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolio .portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.portfolio img {
+  /* flex: 1 1 calc(33.333% - 1rem); */
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.7rem 1.5rem;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ff4500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
